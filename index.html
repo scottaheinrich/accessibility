@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Accessibility Forms</title>
@@ -17,58 +17,66 @@
       <h1>Application form</h1>
 
       <form action="" method="post" name="form1" id="form1">
-      <p>1. Personal Details</p>
-      <p>Name:
-      <input type="text" id="textfield"></p>
-
-      <p>Phone Number:
-      <input type="text" id="textfield3"></p>
-
-      <p>Date of Birth:
-      <input type="text" tabindex="-1" id="textfield2"></p>
-
-      <p><label for="textfield4">First Name:
-      <input type="text" id="textfield4"></p>
-
-      <p>Last Name:
-      <input type="text" tabindex="4" id="textfield5"></p>
-
-      <p><label for="address">Address:</label>
-      <input type="text"></p>
-
-      <p>State:
-       <select id="state">
-        <option value="0">Select</option>
-        <option value="Arizona">Arizona</option>
-        <option value="California">California</option>
-        <option value="Idaho">Idaho</option>
-        <option value="Montana">Montana</option>
-        <option value="Nevada">Nevada</option>
-        <option value="Utah">Utah</option>
-        <option value="Washington">Washington</option>
-        <option value="Wyoming">Wyoming</option>
-      </select>
-      </p>
-
       <fieldset>
-      <legend>2. Emergency Contact</legend>
-      <p>Name:
-      <input type="text" id="textfield13"></p>
+        <legend>1. Personal Details</legend>
+        
+        <p><label for="Name">Name:</label>
+        <input type="text" name="Name" id="Name"/></p>
 
-      <p>Address:
-      <input type="text" id="textfield14"></p>
+        <p><label for="PhoneNumber">Phone Number:</label>
+        <input type="text" name="PhoneNumber" id="PhoneNumber"></p>
 
-      <p>State
-      <input type="text" id="textfield15"></p>
+        <p><label for="DateOfBirth">Date of Birth:</label>
+        <input type="text" tabindex="-1" name="DateOfBirth" id="DateOfBirth"></p>
 
-      <p>Telephone:
-      <input type="text" id="textfield16"></p>
+        <p><label for="FirstName">First Name:</label> 
+        <input type="text" name="FirstName" id="FirstName"></p>
+
+        <p><label for="LastName">Last Name:</label> 
+        <input type="text" tabindex="4" name="LastName" id="LastName"></p>
+
+        <p><label for="address">Address:</label>
+        <input type="text" name="address" id="address"></p>
+
+        <p><label for="state">State:</label>
+         <select id="state">
+          <option value="0">Select</option>
+          <option value="Arizona">Arizona</option>
+          <option value="California">California</option>
+          <option value="Idaho">Idaho</option>
+          <option value="Montana">Montana</option>
+          <option value="Nevada">Nevada</option>
+          <option value="Utah">Utah</option>
+          <option value="Washington">Washington</option>
+          <option value="Wyoming">Wyoming</option>
+        </select>
+        </p>
       </fieldset>
 
-      <p>3. Citizenship</p>
-      <p><input type="radio">United States</p>
-      <p><input type="radio">Canada</p>
+      <p></p>
 
+      <fieldset>
+        <legend>2. Emergency Contact</legend>
+        <p><label for="EmergencyContactName">Name:</label>
+        <input type="text" name="EmergencyContactName" id="EmergencyContactName"></p>
+
+        <p><label for="EmergencyContactAddress">Address:</label> 
+        <input type="text" name="EmergencyContactAddress" id="EmergencyContactAddress"></p>
+
+        <p><label for="EmergencyContactState">State</label>
+        <input type="text" name ="EmergencyContactState" id="EmergencyContactState"></p>
+
+        <p><label for="EmergencyContactTelephone">Telephone:</label>
+        <input type="text" name="EmergencyContactTelephone" id="EmergencyContactTelephone"></p>
+      </fieldset>
+
+      <p></p>
+
+      <fieldset>
+        <legend>3. Citizenship</legend>
+        <p><input type="radio" id="US"><label for="US">United States</label></p>
+        <p><input type="radio" id="CA"><label for="CA">Canada</label></p>
+      </fieldset>
       <p><input type="submit" value="Submit" id="button" name="button"></p>
       </form>
     </div>
